@@ -1,11 +1,11 @@
 /*
 Author:
 Date:
-File Name: 
+File Name:
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div {
+body, header, nav, main, footer, h1, div, section, article, aside {
     margin: 0;
     padding: 0;
     border: 0;
@@ -49,19 +49,39 @@ main {
 	background-color: #fff;
 }
 
+section {
+  background-color: #183440;
+  color: #fff;
+  margin-top: 4%;
+  padding: 3%;
+}
+
+article {
+  margin-top: 1%;
+ padding: 2%;
+}
+
 footer {
 	font-size: .70em;
 	text-align: center;
 }
 
+aside{
+  background-color: rgba(24, 52, 64, 0.3);
+  padding: 2%;
+  margin-top: 1%;
+  color: #183440;
+  box-shadow: 4px 4px 10px #183440;
+}
+
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 650px), print {
-    
-    
+
+
 }
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1024px), print {
 
-    
+
 }
