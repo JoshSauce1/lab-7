@@ -1,7 +1,7 @@
 /*
 Author:
 Date:
-File Name: 
+File Name:
 */
 
 /* CSS Reset */
@@ -38,4 +38,27 @@ aside {
 footer {
 	font-size: .70em;
 	text-align: center;
+}
+
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 650px), print {
+
+.grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1024px), print {
+  .grid {
+      grid-template-columns: auto auto auto;
+    }
+    aside {
+      grid-column: 1 / span 4;
+    }
 }
